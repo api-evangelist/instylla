@@ -1,0 +1,39 @@
+generated: '2026-08-23'
+method: searched
+source: >-
+  Registry sweep 2026-08-23 — registry.npmjs.org search, pypi.org/pypi/instylla/json,
+  rubygems.org/api/v1/gems/instylla.json, crates.io/api/v1/crates?q=instylla,
+  api.github.com/search/users?q=instylla, api.github.com/search/repositories?q=instylla
+package_count: 0
+packages: []
+note: >-
+  No first-party client library exists in any public registry, and Instylla has no GitHub
+  organization or repository. Instylla is a medical device manufacturer with no software product,
+  no developer program and no public API, so there is nothing for an SDK to wrap. Recorded as a
+  verified absence, not a gap. NO Packages and NO SDKs pointer is emitted in apis.yml — this file
+  documents an absence and must not be read as a presence.
+searched:
+- registry: npm
+  query: https://registry.npmjs.org/-/v1/search?text=instylla
+  status: 200
+  results: 0
+- registry: pypi
+  query: https://pypi.org/pypi/instylla/json
+  status: 404
+  results: 0
+- registry: rubygems
+  query: https://rubygems.org/api/v1/gems/instylla.json
+  status: 404
+  results: 0
+- registry: crates.io
+  query: https://crates.io/api/v1/crates?q=instylla
+  status: 200
+  results: 0
+- registry: github
+  query: https://api.github.com/search/users?q=instylla
+  status: 200
+  results: 0
+- registry: github
+  query: https://api.github.com/search/repositories?q=instylla
+  status: 200
+  results: 0

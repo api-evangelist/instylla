@@ -1,0 +1,47 @@
+generated: '2026-08-23'
+method: probed
+source: live probes of https://instylla.com/.well-known/* (2026-08-23)
+hit_count: 0
+note: >-
+  Every path on instylla.com — including /.well-known/*, ordinary marketing pages and static theme
+  assets — is answered by a SiteGround anti-bot interstitial ("Robot Challenge Screen", HTTP 202,
+  ~180 bytes of HTML with a meta refresh to /.well-known/sgcaptcha/). The origin returns the same
+  challenge body for a path that exists (/about/) and one that does not, so this probe CANNOT
+  distinguish a served .well-known document from a 404. No document was fetched and none was saved,
+  therefore NO WellKnown and NO SecurityTxt pointer is emitted. We do not evade bot challenges.
+soft_404_control:
+  path: /.well-known/instylla-no-such-path-20260823
+  status: 202
+  bytes: 213
+  body: SiteGround sgcaptcha interstitial — identical shape to every other path
+hosts:
+- host: https://instylla.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 202
+    file: null
+    note: bot-challenge interstitial, not a document
+  - path: /.well-known/openid-configuration
+    status: 202
+    file: null
+    note: bot-challenge interstitial, not a document
+  - path: /.well-known/oauth-authorization-server
+    status: 202
+    file: null
+    note: bot-challenge interstitial, not a document
+  - path: /.well-known/api-catalog
+    status: 202
+    file: null
+    note: bot-challenge interstitial, not a document
+  - path: /.well-known/ai-plugin.json
+    status: 202
+    file: null
+    note: bot-challenge interstitial, not a document
+  - path: /.well-known/agent-card.json
+    status: 202
+    file: null
+    note: bot-challenge interstitial, not a document — rejected, not an AgentCard JSON object
+  - path: /.well-known/agent.json
+    status: 202
+    file: null
+    note: bot-challenge interstitial, not a document — rejected, not an AgentCard JSON object
