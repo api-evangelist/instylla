@@ -12,6 +12,17 @@ description: >-
   resorb by hydrolysis over roughly eleven months. Instylla is a device manufacturer rather than a
   software vendor: it publishes no developer program, no public API, and no machine-readable
   interface contract.
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://instylla.com/wp-content/uploads/2021/08/Instyla-Social-Share-Image-v2.jpg
 url: https://raw.githubusercontent.com/api-evangelist/instylla/refs/heads/main/apis.yml
 x-type: company
